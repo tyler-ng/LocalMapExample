@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FC3424B2CCB6B20009AA8A1 /* CoreDataWiFiMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3424A2CCB6B20009AA8A1 /* CoreDataWiFiMapApp.swift */; };
+		2FC3424D2CCB6B20009AA8A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3424C2CCB6B20009AA8A1 /* ContentView.swift */; };
+		2FC3424F2CCB6B21009AA8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC3424E2CCB6B21009AA8A1 /* Assets.xcassets */; };
+		2FC342522CCB6B21009AA8A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC342512CCB6B21009AA8A1 /* Preview Assets.xcassets */; };
+		2FC3425C2CCB6B22009AA8A1 /* CoreDataWiFiMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3425B2CCB6B22009AA8A1 /* CoreDataWiFiMapTests.swift */; };
+		2FC342662CCB6B22009AA8A1 /* CoreDataWiFiMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC342652CCB6B22009AA8A1 /* CoreDataWiFiMapUITests.swift */; };
+		2FC342682CCB6B22009AA8A1 /* CoreDataWiFiMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC342672CCB6B22009AA8A1 /* CoreDataWiFiMapUITestsLaunchTests.swift */; };
+		2FC342782CCB6B7B009AA8A1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC342772CCB6B7B009AA8A1 /* DataController.swift */; };
+		2FC342822CCB6D55009AA8A1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC342812CCB6D55009AA8A1 /* Helpers.swift */; };
+		2FC342842CCB754A009AA8A1 /* miner_info_filtered.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FC342832CCB754A009AA8A1 /* miner_info_filtered.json */; };
+		2FC3429D2CCDCE47009AA8A1 /* MyDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3429B2CCDCE47009AA8A1 /* MyDatabase.xcdatamodeld */; };
+		2FC3432E2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3432C2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataClass.swift */; };
+		2FC3432F2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3432D2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataProperties.swift */; };
+		2FC343312CCDFF84009AA8A1 /* FirstMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC343302CCDFF84009AA8A1 /* FirstMapView.swift */; };
+		2FC343332CCDFFB8009AA8A1 /* LoadDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC343322CCDFFB8009AA8A1 /* LoadDataView.swift */; };
+		2FC343362CCECD3E009AA8A1 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC343352CCECD3E009AA8A1 /* SQLite */; };
+		2FC3433A2CCECD92009AA8A1 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC343392CCECD92009AA8A1 /* DatabaseManager.swift */; };
+		2FC3433D2CCECE55009AA8A1 /* NotesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3433C2CCECE55009AA8A1 /* NotesTable.swift */; };
+		2FC343402CCED03E009AA8A1 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3433F2CCED03E009AA8A1 /* Notes.swift */; };
+		2FC343432CCED36D009AA8A1 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC343422CCED36D009AA8A1 /* TodoView.swift */; };
+		2FC343452CCEE587009AA8A1 /* MapPlaceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC343442CCEE587009AA8A1 /* MapPlaceContainer.swift */; };
+		2FC343472CCEE5FE009AA8A1 /* PlacesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC343462CCEE5FE009AA8A1 /* PlacesTable.swift */; };
+		2FC343492CCEEA1D009AA8A1 /* LoadMapSqliteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC343482CCEEA1D009AA8A1 /* LoadMapSqliteData.swift */; };
+		2FC3434B2CD2A86A009AA8A1 /* NewMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3434A2CD2A86A009AA8A1 /* NewMapView.swift */; };
+		2FC3434D2CD2A9A4009AA8A1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3434C2CD2A9A4009AA8A1 /* MapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FC342582CCB6B22009AA8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC3423F2CCB6B20009AA8A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FC342462CCB6B20009AA8A1;
+			remoteInfo = CoreDataWiFiMap;
+		};
+		2FC342622CCB6B22009AA8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC3423F2CCB6B20009AA8A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FC342462CCB6B20009AA8A1;
+			remoteInfo = CoreDataWiFiMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FC342472CCB6B20009AA8A1 /* CoreDataWiFiMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataWiFiMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC3424A2CCB6B20009AA8A1 /* CoreDataWiFiMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWiFiMapApp.swift; sourceTree = "<group>"; };
+		2FC3424C2CCB6B20009AA8A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2FC3424E2CCB6B21009AA8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FC342512CCB6B21009AA8A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FC342572CCB6B22009AA8A1 /* CoreDataWiFiMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataWiFiMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC3425B2CCB6B22009AA8A1 /* CoreDataWiFiMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWiFiMapTests.swift; sourceTree = "<group>"; };
+		2FC342612CCB6B22009AA8A1 /* CoreDataWiFiMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataWiFiMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC342652CCB6B22009AA8A1 /* CoreDataWiFiMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWiFiMapUITests.swift; sourceTree = "<group>"; };
+		2FC342672CCB6B22009AA8A1 /* CoreDataWiFiMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWiFiMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FC342772CCB6B7B009AA8A1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2FC342812CCB6D55009AA8A1 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		2FC342832CCB754A009AA8A1 /* miner_info_filtered.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = miner_info_filtered.json; sourceTree = "<group>"; };
+		2FC3429C2CCDCE47009AA8A1 /* MyDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDatabase.xcdatamodel; sourceTree = "<group>"; };
+		2FC3432C2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapPlaceEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2FC3432D2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapPlaceEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2FC343302CCDFF84009AA8A1 /* FirstMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMapView.swift; sourceTree = "<group>"; };
+		2FC343322CCDFFB8009AA8A1 /* LoadDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataView.swift; sourceTree = "<group>"; };
+		2FC343392CCECD92009AA8A1 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		2FC3433C2CCECE55009AA8A1 /* NotesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTable.swift; sourceTree = "<group>"; };
+		2FC3433F2CCED03E009AA8A1 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		2FC343422CCED36D009AA8A1 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		2FC343442CCEE587009AA8A1 /* MapPlaceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPlaceContainer.swift; sourceTree = "<group>"; };
+		2FC343462CCEE5FE009AA8A1 /* PlacesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTable.swift; sourceTree = "<group>"; };
+		2FC343482CCEEA1D009AA8A1 /* LoadMapSqliteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMapSqliteData.swift; sourceTree = "<group>"; };
+		2FC3434A2CD2A86A009AA8A1 /* NewMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapView.swift; sourceTree = "<group>"; };
+		2FC3434C2CD2A9A4009AA8A1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FC342442CCB6B20009AA8A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC343362CCECD3E009AA8A1 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC342542CCB6B22009AA8A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3425E2CCB6B22009AA8A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FC3423E2CCB6B20009AA8A1 = {
+			isa = PBXGroup;
+			children = (
+				2FC3432C2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataClass.swift */,
+				2FC3432D2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataProperties.swift */,
+				2FC342492CCB6B20009AA8A1 /* CoreDataWiFiMap */,
+				2FC3425A2CCB6B22009AA8A1 /* CoreDataWiFiMapTests */,
+				2FC342642CCB6B22009AA8A1 /* CoreDataWiFiMapUITests */,
+				2FC342482CCB6B20009AA8A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FC342482CCB6B20009AA8A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FC342472CCB6B20009AA8A1 /* CoreDataWiFiMap.app */,
+				2FC342572CCB6B22009AA8A1 /* CoreDataWiFiMapTests.xctest */,
+				2FC342612CCB6B22009AA8A1 /* CoreDataWiFiMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FC342492CCB6B20009AA8A1 /* CoreDataWiFiMap */ = {
+			isa = PBXGroup;
+			children = (
+				2FC343412CCED260009AA8A1 /* domain */,
+				2FC343372CCECD74009AA8A1 /* data */,
+				2FC3424A2CCB6B20009AA8A1 /* CoreDataWiFiMapApp.swift */,
+				2FC3424C2CCB6B20009AA8A1 /* ContentView.swift */,
+				2FC343322CCDFFB8009AA8A1 /* LoadDataView.swift */,
+				2FC343482CCEEA1D009AA8A1 /* LoadMapSqliteData.swift */,
+				2FC343422CCED36D009AA8A1 /* TodoView.swift */,
+				2FC343302CCDFF84009AA8A1 /* FirstMapView.swift */,
+				2FC3434A2CD2A86A009AA8A1 /* NewMapView.swift */,
+				2FC3434C2CD2A9A4009AA8A1 /* MapView.swift */,
+				2FC342812CCB6D55009AA8A1 /* Helpers.swift */,
+				2FC342772CCB6B7B009AA8A1 /* DataController.swift */,
+				2FC3429B2CCDCE47009AA8A1 /* MyDatabase.xcdatamodeld */,
+				2FC342832CCB754A009AA8A1 /* miner_info_filtered.json */,
+				2FC3424E2CCB6B21009AA8A1 /* Assets.xcassets */,
+				2FC342502CCB6B21009AA8A1 /* Preview Content */,
+			);
+			path = CoreDataWiFiMap;
+			sourceTree = "<group>";
+		};
+		2FC342502CCB6B21009AA8A1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2FC342512CCB6B21009AA8A1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2FC3425A2CCB6B22009AA8A1 /* CoreDataWiFiMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3425B2CCB6B22009AA8A1 /* CoreDataWiFiMapTests.swift */,
+			);
+			path = CoreDataWiFiMapTests;
+			sourceTree = "<group>";
+		};
+		2FC342642CCB6B22009AA8A1 /* CoreDataWiFiMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FC342652CCB6B22009AA8A1 /* CoreDataWiFiMapUITests.swift */,
+				2FC342672CCB6B22009AA8A1 /* CoreDataWiFiMapUITestsLaunchTests.swift */,
+			);
+			path = CoreDataWiFiMapUITests;
+			sourceTree = "<group>";
+		};
+		2FC343372CCECD74009AA8A1 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2FC343382CCECD7D009AA8A1 /* database */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		2FC343382CCECD7D009AA8A1 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3433B2CCECE44009AA8A1 /* tables */,
+				2FC343392CCECD92009AA8A1 /* DatabaseManager.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		2FC3433B2CCECE44009AA8A1 /* tables */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3433C2CCECE55009AA8A1 /* NotesTable.swift */,
+				2FC343462CCEE5FE009AA8A1 /* PlacesTable.swift */,
+			);
+			path = tables;
+			sourceTree = "<group>";
+		};
+		2FC3433E2CCED035009AA8A1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3433F2CCED03E009AA8A1 /* Notes.swift */,
+				2FC343442CCEE587009AA8A1 /* MapPlaceContainer.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2FC343412CCED260009AA8A1 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3433E2CCED035009AA8A1 /* model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FC342462CCB6B20009AA8A1 /* CoreDataWiFiMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC3426B2CCB6B22009AA8A1 /* Build configuration list for PBXNativeTarget "CoreDataWiFiMap" */;
+			buildPhases = (
+				2FC342432CCB6B20009AA8A1 /* Sources */,
+				2FC342442CCB6B20009AA8A1 /* Frameworks */,
+				2FC342452CCB6B20009AA8A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataWiFiMap;
+			packageProductDependencies = (
+				2FC343352CCECD3E009AA8A1 /* SQLite */,
+			);
+			productName = CoreDataWiFiMap;
+			productReference = 2FC342472CCB6B20009AA8A1 /* CoreDataWiFiMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FC342562CCB6B22009AA8A1 /* CoreDataWiFiMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC3426E2CCB6B22009AA8A1 /* Build configuration list for PBXNativeTarget "CoreDataWiFiMapTests" */;
+			buildPhases = (
+				2FC342532CCB6B22009AA8A1 /* Sources */,
+				2FC342542CCB6B22009AA8A1 /* Frameworks */,
+				2FC342552CCB6B22009AA8A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FC342592CCB6B22009AA8A1 /* PBXTargetDependency */,
+			);
+			name = CoreDataWiFiMapTests;
+			productName = CoreDataWiFiMapTests;
+			productReference = 2FC342572CCB6B22009AA8A1 /* CoreDataWiFiMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FC342602CCB6B22009AA8A1 /* CoreDataWiFiMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC342712CCB6B22009AA8A1 /* Build configuration list for PBXNativeTarget "CoreDataWiFiMapUITests" */;
+			buildPhases = (
+				2FC3425D2CCB6B22009AA8A1 /* Sources */,
+				2FC3425E2CCB6B22009AA8A1 /* Frameworks */,
+				2FC3425F2CCB6B22009AA8A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FC342632CCB6B22009AA8A1 /* PBXTargetDependency */,
+			);
+			name = CoreDataWiFiMapUITests;
+			productName = CoreDataWiFiMapUITests;
+			productReference = 2FC342612CCB6B22009AA8A1 /* CoreDataWiFiMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FC3423F2CCB6B20009AA8A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2FC342462CCB6B20009AA8A1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2FC342562CCB6B22009AA8A1 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2FC342462CCB6B20009AA8A1;
+					};
+					2FC342602CCB6B22009AA8A1 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2FC342462CCB6B20009AA8A1;
+					};
+				};
+			};
+			buildConfigurationList = 2FC342422CCB6B20009AA8A1 /* Build configuration list for PBXProject "CoreDataWiFiMap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FC3423E2CCB6B20009AA8A1;
+			packageReferences = (
+				2FC343342CCECD3D009AA8A1 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
+			productRefGroup = 2FC342482CCB6B20009AA8A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FC342462CCB6B20009AA8A1 /* CoreDataWiFiMap */,
+				2FC342562CCB6B22009AA8A1 /* CoreDataWiFiMapTests */,
+				2FC342602CCB6B22009AA8A1 /* CoreDataWiFiMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FC342452CCB6B20009AA8A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC342522CCB6B21009AA8A1 /* Preview Assets.xcassets in Resources */,
+				2FC342842CCB754A009AA8A1 /* miner_info_filtered.json in Resources */,
+				2FC3424F2CCB6B21009AA8A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC342552CCB6B22009AA8A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3425F2CCB6B22009AA8A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FC342432CCB6B20009AA8A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC343452CCEE587009AA8A1 /* MapPlaceContainer.swift in Sources */,
+				2FC3429D2CCDCE47009AA8A1 /* MyDatabase.xcdatamodeld in Sources */,
+				2FC343332CCDFFB8009AA8A1 /* LoadDataView.swift in Sources */,
+				2FC343432CCED36D009AA8A1 /* TodoView.swift in Sources */,
+				2FC3433A2CCECD92009AA8A1 /* DatabaseManager.swift in Sources */,
+				2FC343312CCDFF84009AA8A1 /* FirstMapView.swift in Sources */,
+				2FC342822CCB6D55009AA8A1 /* Helpers.swift in Sources */,
+				2FC3434D2CD2A9A4009AA8A1 /* MapView.swift in Sources */,
+				2FC3433D2CCECE55009AA8A1 /* NotesTable.swift in Sources */,
+				2FC3432F2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataProperties.swift in Sources */,
+				2FC3434B2CD2A86A009AA8A1 /* NewMapView.swift in Sources */,
+				2FC343472CCEE5FE009AA8A1 /* PlacesTable.swift in Sources */,
+				2FC3424D2CCB6B20009AA8A1 /* ContentView.swift in Sources */,
+				2FC343492CCEEA1D009AA8A1 /* LoadMapSqliteData.swift in Sources */,
+				2FC3432E2CCDFCC7009AA8A1 /* MapPlaceEntity+CoreDataClass.swift in Sources */,
+				2FC342782CCB6B7B009AA8A1 /* DataController.swift in Sources */,
+				2FC3424B2CCB6B20009AA8A1 /* CoreDataWiFiMapApp.swift in Sources */,
+				2FC343402CCED03E009AA8A1 /* Notes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC342532CCB6B22009AA8A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC3425C2CCB6B22009AA8A1 /* CoreDataWiFiMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3425D2CCB6B22009AA8A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC342662CCB6B22009AA8A1 /* CoreDataWiFiMapUITests.swift in Sources */,
+				2FC342682CCB6B22009AA8A1 /* CoreDataWiFiMapUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FC342592CCB6B22009AA8A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FC342462CCB6B20009AA8A1 /* CoreDataWiFiMap */;
+			targetProxy = 2FC342582CCB6B22009AA8A1 /* PBXContainerItemProxy */;
+		};
+		2FC342632CCB6B22009AA8A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FC342462CCB6B20009AA8A1 /* CoreDataWiFiMap */;
+			targetProxy = 2FC342622CCB6B22009AA8A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FC342692CCB6B22009AA8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FC3426A2CCB6B22009AA8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FC3426C2CCB6B22009AA8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoreDataWiFiMap/Preview Content\"";
+				DEVELOPMENT_TEAM = HB3KZ347K9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerapp.CoreDataWiFiMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FC3426D2CCB6B22009AA8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoreDataWiFiMap/Preview Content\"";
+				DEVELOPMENT_TEAM = HB3KZ347K9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerapp.CoreDataWiFiMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2FC3426F2CCB6B22009AA8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB3KZ347K9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerapp.CoreDataWiFiMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataWiFiMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreDataWiFiMap";
+			};
+			name = Debug;
+		};
+		2FC342702CCB6B22009AA8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB3KZ347K9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerapp.CoreDataWiFiMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataWiFiMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreDataWiFiMap";
+			};
+			name = Release;
+		};
+		2FC342722CCB6B22009AA8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB3KZ347K9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerapp.CoreDataWiFiMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoreDataWiFiMap;
+			};
+			name = Debug;
+		};
+		2FC342732CCB6B22009AA8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB3KZ347K9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerapp.CoreDataWiFiMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoreDataWiFiMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FC342422CCB6B20009AA8A1 /* Build configuration list for PBXProject "CoreDataWiFiMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC342692CCB6B22009AA8A1 /* Debug */,
+				2FC3426A2CCB6B22009AA8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC3426B2CCB6B22009AA8A1 /* Build configuration list for PBXNativeTarget "CoreDataWiFiMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC3426C2CCB6B22009AA8A1 /* Debug */,
+				2FC3426D2CCB6B22009AA8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC3426E2CCB6B22009AA8A1 /* Build configuration list for PBXNativeTarget "CoreDataWiFiMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC3426F2CCB6B22009AA8A1 /* Debug */,
+				2FC342702CCB6B22009AA8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC342712CCB6B22009AA8A1 /* Build configuration list for PBXNativeTarget "CoreDataWiFiMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC342722CCB6B22009AA8A1 /* Debug */,
+				2FC342732CCB6B22009AA8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FC343342CCECD3D009AA8A1 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = exactVersion;
+				version = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FC343352CCECD3E009AA8A1 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FC343342CCECD3D009AA8A1 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2FC3429B2CCDCE47009AA8A1 /* MyDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2FC3429C2CCDCE47009AA8A1 /* MyDatabase.xcdatamodel */,
+			);
+			currentVersion = 2FC3429C2CCDCE47009AA8A1 /* MyDatabase.xcdatamodel */;
+			path = MyDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2FC3423F2CCB6B20009AA8A1 /* Project object */;
+}
