@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import CoreLocation
 
 struct NewMapView: View {
     @State private var region = MKCoordinateRegion(
@@ -30,7 +31,7 @@ struct NewMapView: View {
                     updateTopRightCornerCoordinate()
                     updateBottomLeftCornerCoordinate()
                     updateBottomRightCornerCoordinate()
-                    findNearestPlacesAroundMyHome()
+                    findPlacesWithinCurrentMapRegion()
                 }
         }
         
@@ -68,7 +69,7 @@ struct NewMapView: View {
         print("bottomRight: \(northLat), \(westLong)")
     }
     
-    private func findNearestPlacesAroundMyHome() {
+    private func findPlacesWithinCurrentMapRegion() {
         Task {
             guard let topLeftCoor = topLeftCornerCoordinate,
                   let topRightCoor = topRightCornerCoordinate,
@@ -87,8 +88,13 @@ struct NewMapView: View {
                 return
             }
             
-            if places.count >= 500 {
-                places = Array(places.prefix(500))
+//            let center = CLLocation(latitude: region.center.latitude, longitude: region.center.longitude)
+//            places = places.sorted { (place1, place2) in
+//                return place1.location.distance(from: center) < place2.location.distance(from: center)
+//            }
+            
+            if places.count >= 1000 {
+                places = Array(places.prefix(1000))
             }
             
             var anns = [PlaceAnnotation]()
